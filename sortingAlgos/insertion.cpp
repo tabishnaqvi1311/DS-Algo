@@ -3,7 +3,10 @@
 //and decide whether to move it to the left 
 // or to the right
 // and shift the element between which the element has to be INSERTED
-//n rounds
+//n roundsa
+
+//adaptive algo
+//good for partiallysorted arrays
 #include <iostream>
 using namespace std;
 
