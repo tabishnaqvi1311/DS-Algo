@@ -17,8 +17,8 @@ int bubble(int arr[], int size){
             }
         }
         printIt(arr, size);
-        return 0;
     }
+    return 0;
 }
 
 int main(){
