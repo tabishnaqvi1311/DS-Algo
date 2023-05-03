@@ -4,7 +4,7 @@ using namespace std;
 int len(char name[]){
     int i;
     for(i = 0; name[i] != '\0'; i++);
-    return i;
+    return i + 1;
 }
 
 int main(){
