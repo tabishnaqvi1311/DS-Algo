@@ -15,12 +15,16 @@ int binaryRec(int *arr, int s, int e, int target){
 
 int main(){
     
-    int arr[5] = {1, 2, 3, 4, 5};
+    int arr[6] = {1, 2, 3, 4, 5, 6};
 
     int target;
     cin >> target;
 
-    cout << binaryRec(arr, 0, 4, target);
+    int ans = binaryRec(arr, 0, 5, target);
+    if(ans == -1){
+        cout << "element not found";
+    }
+    else cout << "element found at" << ans;
 
     return 0;
 }

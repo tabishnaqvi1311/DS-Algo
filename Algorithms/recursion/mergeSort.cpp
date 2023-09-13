@@ -14,13 +14,9 @@ void merge(int *arr, int s, int e){
 
     //copy values to smaller arrays
     int main = s;
-    for(int i = 0; i < len1; i++){
-        first[i] = arr[main++];
-    }
+    for(int i = 0; i < len1; i++) first[i] = arr[main++];
     main = mid+1;
-    for(int i = 0; i < len2; i++){
-        second[i] = arr[main++];
-    }
+    for(int i = 0; i < len2; i++) second[i] = arr[main++];
 
     //merge two sorted arrays
     int i = 0, j = 0; 
@@ -47,9 +43,10 @@ void mergeSort(int *arr, int s, int e){
     mergeSort(arr, s, mid);
     //right part
     mergeSort(arr, mid+1, e);
+    
+    //main function that actually does the sorting
     merge(arr, s, e);
 }
-
 
 
 int main(){

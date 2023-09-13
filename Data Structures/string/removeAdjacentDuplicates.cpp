@@ -18,7 +18,7 @@ string checkForDup(string s){
             e += 1;
             st += 1;
         }
-    }
+    }f
     if(it){
         checkForDup(s);
     }
