@@ -19,7 +19,7 @@ public:
             return false;
         }
         st[++top] = x;
-        cout << "Pushed\n";
+        cout << "Pushed" << endl << x << endl;
         return true;
     }
 
@@ -29,6 +29,7 @@ public:
             return false;
         }
         int x = st[top--];
+        cout << "popped" << endl << x << endl;
         return x;
     }
 
@@ -52,9 +53,9 @@ int main(){
 
     s.push(1);
     s.push(32);
-    s.push(54);
-
+    s.peek();
     s.pop();
+    s.peek();
 
 
 
