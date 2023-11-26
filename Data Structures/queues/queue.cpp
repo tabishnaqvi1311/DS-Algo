@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-
-
 class Queue{
 private:
     static const int maxSize = 100;
@@ -13,7 +11,6 @@ public:
         front = -1;
         rear = -1;
     }
-
     bool isEmpty(){
         return (front == -1 && rear == -1);
     }
@@ -41,16 +38,10 @@ public:
         else front = (front + 1)%maxSize;
     }
 };
-
 int main(){
     Queue q1;
     q1.enqueue(5);
-    q1.enqueue(6);
-    q1.enqueue(2);
-    q1.enqueue(4);
+    cout << q1.isEmpty();
     q1.dequeue();
-    q1.dequeue();
-    q1.dequeue();
-    q1.dequeue();
-    q1.isEmpty();
+    cout << q1.isEmpty();
 }

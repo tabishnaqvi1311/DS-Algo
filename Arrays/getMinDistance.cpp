@@ -4,7 +4,7 @@ using namespace std;
 
 int getMinDistance(vector<int> nums, int start, int target){
     for(int i = 0; i < nums.size(); i++){
-        cout << nums[i];
+        cout << nums;
     }
 }
 

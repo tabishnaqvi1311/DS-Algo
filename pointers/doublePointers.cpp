@@ -2,7 +2,12 @@
 using namespace std;
 int main(){
     
-    cout << 88/5;
+    int n = 20;
+    int *pt = &n;
+    int **(pt) = &pt;
+
+
+
 
     return 0;
 }

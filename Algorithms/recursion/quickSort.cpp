@@ -6,10 +6,9 @@ void print(int *arr, int size){
     if(size < 1) return;
     return print(arr+1, size-1);
 }
-
 int partit(int *arr, int s, int e){
     int pivot = arr[s];
-
+    //count all elements <= pivot
     int count = 0;
     for(int i = s+1; i <= e; i++){
         if(arr[i] <= pivot) count++;
@@ -30,8 +29,6 @@ int partit(int *arr, int s, int e){
     }
     return pivotIndex;
 }
-
-
 void quickSort(int *arr, int s, int e){
     //base case
     if(s >= e) return;
@@ -42,13 +39,10 @@ void quickSort(int *arr, int s, int e){
     //sort right part
     quickSort(arr, p+1, e);
 }
-
 int main(){
-    
     int arr[8] = {5, 7, 3, 2, 9, 1, 4, 0};
 
     quickSort(arr, 0, 7);
     print(arr, 7);
-
     return 0;
 }
